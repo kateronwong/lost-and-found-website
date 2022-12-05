@@ -1,0 +1,657 @@
+html{
+	height : 100%;
+	width : 100%;
+	font-family: 'Titillium Web', sans-serif;
+	background-image : linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url(bg.jpg);
+	background-position: center;
+	background-size : cover;
+	color: #dedeec;
+}
+
+*{
+	margin :0;
+	padding :0;
+	font-family: sans-serif;
+}
+
+.outer{
+	height : 100%;
+	width : 100%;
+	background-image : linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url(bg.jpg);
+	background-position: center;
+	background-size : cover;
+	position:absolute;
+	
+}
+
+.formlayer{
+	width: 700px;
+	height: 550px;
+	position: relative;
+	margin: 6% auto;
+	background: #0e1d34;
+	padding: 5px;
+	overflow:hidden;
+	border-radius: 50px;
+}
+
+.buttonlayer{
+	width: 220px;
+	margin: 60px auto;
+	position: relative;
+	box-shadow: 0 0 20px 9px #4680d2d1;
+	border-radius: 30px;
+}
+
+#sys{
+	top:140px;
+	left:380px;
+	position: absolute;
+	width:300px;
+	height: 300px;
+	border-radius: 50px;
+}
+
+#btnstyle{
+	top:0;
+	left:0;
+	position: absolute;
+	width:110px;
+	height: 100%;
+	background:linear-gradient(to right, #3215ed, #b5afe3);
+	border-radius: 30px;
+	transition: .5s;
+	
+}
+
+.toggle{
+	padding: 10px 30px;
+	cursor: pointer;
+	background: transparent;
+	border: 0;
+	outline:none;
+	position: relative;
+	color: #78eff1;
+	font-family:monospace;
+	font-weight: bold;
+	font-size: 10px;
+}
+
+.inputform{
+	top: 200px;
+	position: absolute;
+	width: 280px;
+	transition: .5s;
+}
+
+.LInput{
+	width: 100%;
+	padding: 10px 0;
+	margin:5px 0;
+	border-left: 0;
+	border-top: 0;
+	border-right: 0;
+	border-bottom: 1px solid rgb(27, 201, 100);
+	outline-color: rgb(236, 229, 23);
+	background: transparent;
+	font-family:monospace;
+	font-weight: bold;
+	font-size: 15px;
+	color: #78eff1;
+	text-align: center;
+}
+
+.Subbtn{
+	width: 90%;
+	padding: 10px 30px;
+	cursor: pointer;
+	margin-top: 10px;
+	margin-left: 10px;
+	background:linear-gradient(to right, #3215ed, #b5afe3);
+	border:0;
+	outline:none;
+	border-radius:30px;
+	font-family:monospace;
+	font-weight: bold;
+	font-size: 18px;
+}
+
+.bSubbtn{
+	width: 80%;
+	padding: 10px 30px;
+	cursor: pointer;
+	margin-top: 10px;
+	margin-left: 50px;
+	background:linear-gradient(to right, #3215ed, #b5afe3);
+	border:0;
+	font-family:monospace;
+	font-weight: bold;
+	font-size: 20px;
+	border-radius:30px;
+}
+
+#forgetpw{
+	margin-left: 5px;
+	color: #f30808;
+	font-family:monospace;
+	font-weight: bold;
+	font-size: 18px;
+}
+
+#loginf{
+	left:40px;
+}
+
+
+#regf{
+	left:800px;
+	top: 100px;
+}
+
+
+
+#logoutlab{
+	color: #fff ;
+	margin-top: -200px ;
+}
+
+#rgs{
+	margin-left: 60px;
+	text-align: center;
+	font-family: monospace;
+	font-size: 30px;
+	font-weight: bold;
+	color: #1eca6c;
+}
+
+#rgsb{
+	margin-left: 50px;
+	text-align: center;
+	font-family: monospace;
+	font-size: 30px;
+	font-weight: bold;
+	color: #000000;
+}
+
+
+
+.foglabel{
+	width: 300px;
+	margin: 30px auto;
+	position: relative;
+	
+	
+}
+
+#fl{
+	font-family: monospace;
+	font-size: 35px;
+	background-position: center;
+}
+
+.container{
+	margin: 20px;
+	padding: 20px;
+}
+
+.bar{
+	display: flex;
+	align-items: center;
+}
+
+.brand{
+	font-size: 40px;
+	display: inline-block;
+	font-family:monospace;
+	
+}
+
+.bar-icon{
+	display: inline-block;
+	width:90px;
+	height:auto;
+}
+
+header{
+	margin-inline: 20px;
+}
+
+.navigation{
+	background-color:#190e33;
+    padding: 10px;
+    width: 100%;
+    display: inline-block;
+    border-radius: 20px;
+    max-height: 200px;
+    margin-right:10px;
+	margin-top:10px;
+}
+
+.nav-list{
+    list-style-type:none;
+    overflow: hidden;
+	
+}
+
+.nav-item a{
+    float: right;
+    text-align: center;
+    margin-inline: 5px;
+    font-size: 20px;
+    padding: 10px;
+    color:#fff;
+	font-family:monospace;
+	font-weight: bold;
+}
+
+.nav-item a:hover{
+    background-color: rgba(19, 154, 238, 0.773);
+}
+
+.table-head{
+    display: flex;
+}
+
+.table-head div{
+    padding: 5px;
+    margin: 2px;
+    background-color: #07012e;
+    font-weight: bold;
+}
+
+.table-head .type{
+    flex: 5%;
+}
+
+.table-head .name{
+    flex: 5%;
+	font-size: 18px;
+    font-family: monospace;
+	text-align: center;
+}
+
+.table-head .status{
+    flex: 10%;
+}
+
+.table-head .topic{
+    flex: 65%;
+}
+
+.table-head .respond{
+    flex: 10%;
+}
+
+.table-head .view{
+    flex: 10%;
+}
+
+.table-row{
+    display: flex;
+}
+
+.table-row .type, .table-row .status, .table-row .topic, .table-row .respond, .table-row .view, .table-row .usernickname, .table-row .uemail, .table-row .nnum, .table-row .rnum , .table-row .uicon, .table-row .inf, .table-row .ar,.table-row .age{
+	padding: 5px;
+    margin: 2px;
+    background-color: #030539;
+}
+
+.table-row .ar{
+	flex: 50%;
+    font-size: 20px;
+    font-family: monospace;
+}
+
+.table-row .type{
+    flex: 5%;
+    font-size: 20px;
+    font-family: monospace;
+}
+
+.table-row .status{
+    flex: 10%;
+    font-size: 20px;
+    font-family: monospace;
+}
+
+.table-row .topic{
+    flex: 65%;
+	font-family: monospace;
+	font-size: 18px;
+}
+
+.table-row .inf{
+    flex: 65%;
+	font-family: monospace;
+	font-size: 18px;
+	color: #1eca6c;
+	text-align: center;
+}
+
+.table-row .respond{
+    flex: 10%;
+	font-size: 30px;
+    text-align: center;
+	font-family: monospace;
+}
+
+.table-row .view{
+    flex: 10%;
+	font-size: 30px;
+    text-align: center;
+	font-family: monospace;
+}
+
+#welcome{
+	font-size: 20px;
+	font-family: monospace;
+	color: red;
+}
+
+#iw{
+	color: red;
+}
+
+.table-row:hover{
+    background-color: rgb(11, 236, 94);
+}
+
+.disrbtn{
+	width: 100%;
+	padding: 10px 30px;
+	cursor: pointer;
+	background-color: #030539;
+	border:0;
+
+}
+
+.rbtn{
+	width: 100%;
+	padding: 10px 30px;
+	cursor: pointer;
+	background-color: #1eca6c;
+	border:0;
+	font-family: monospace;
+	font-size: 18px;
+	font-weight: bold;
+}
+
+.vbtn{
+	width: 100%;
+	padding: 10px 30px;
+	cursor: pointer;
+	background-color: #3f71dc;
+	border:0;
+	font-family: monospace;
+	font-size: 18px;
+	font-weight: bold;
+}
+
+#icon{
+	width:30px;
+	height:auto;
+
+}
+
+.btn-table{
+	display: flex;
+}
+
+.btn-table div{
+    margin-left: 200px;
+	margin-right: 200px;
+	margin-bottom: 10px;
+    background-color: #07012e;
+    font-weight: bold;
+}
+
+.btn-table .cbtn{
+	flex: 50%;
+}
+
+.btn-table .vabtn{
+	flex: 50%;
+}
+
+.btn-table .ebtn{
+	margin-top: 5px;
+	margin-left: 46%;
+}
+
+#cb{
+	width: 100%;
+	padding: 10px 30px;
+	cursor: pointer;
+	background-color: #78eff1;
+	border:0;
+	font-family: monospace;
+	font-size: 30px;
+	font-weight: bold;
+}
+
+#eb{
+	width: 100%;
+	padding: 10px 30px;
+	cursor: pointer;
+	background-color: #bf1b34;
+	border:0;
+	font-family: monospace;
+	font-size: 30px;
+	font-weight: bold;
+}
+
+#vb{
+	width: 100%;
+	padding: 10px 30px;
+	cursor: pointer;
+	background-color: #8878f1;
+	border:0;
+	font-family: monospace;
+	font-size: 30px;
+	font-weight: bold;
+}
+
+.navigate{
+	display: flex;
+	padding: 5px;
+    margin: 2px;
+    background-color: #070321;
+    font-weight: bold;
+	font-family: monospace;
+	font-size: 18px;
+}
+
+.createlabel{
+	display: flex;
+	padding: 50px;
+    margin: 2px;
+    background-color: #070321;
+    font-weight: bold;
+	font-family: monospace;
+	font-size: 30px;
+	text-align: center;
+}
+
+.head{
+    display: flex;
+    background-color: #07012e;
+    padding: 5px;
+	margin: 2px;
+    font-weight: bold;
+    font-size: 15px;
+    font-family: monospace;
+}
+
+.authorsD{
+    flex: 10%;
+	font-family: monospace;
+
+}
+
+.rauthorsD{
+    flex: 80%;
+	font-family: monospace;
+
+}
+
+.topicD{
+    flex: 65%;
+	font-family: monospace;
+}
+
+.typeD{
+    flex: 5%;
+	font-family: monospace;
+}
+
+.dateD{
+    flex: 10%;
+	font-family: monospace;
+}
+
+.rdateD{
+    flex: 10%;
+	font-family: monospace;
+}
+
+.body{
+    display: flex;
+    background-color: #0f1141;
+    padding: 10px;
+    margin-top: 5px;
+}
+
+.body .authorsD .username{
+    font-size: 20px;
+	font-family: monospace;
+}
+
+.body .authorsD img{
+    width: 40%;
+    height: auto;
+}
+
+.nimg{
+	max-width: 40%;
+    max-height: auto;
+}
+
+
+.uimg{
+	max-width: 8%;
+    max-height: auto;
+}
+
+.content {
+	flex: 70%;
+	font-size: 20px;
+	font-family: monospace;
+}
+
+.body {
+	flex: 10%;
+}
+
+.body .content .comment button{
+    border:none;
+    font-weight: bolder;
+    box-shadow: 4px 6px rgb(9, 64, 7);
+    cursor: pointer;
+    float: right;
+}
+
+.comment{
+	float: right;
+}
+
+.nr{
+	font-weight: bolder;
+	font-size: 20px;
+	font-family: monospace;
+	margin-left: 45%;
+}
+
+
+/* ViewUser.php */
+.table-head .uicon{
+    flex: 5%;
+}
+
+.table-head .age{
+    flex: 5%;
+}
+
+
+.table-head .usernickname{
+    flex: 40%;
+}
+
+.table-head .uemail{
+    flex: 30%;
+}
+
+.table-head .nnum{
+    flex: 10%;
+}
+
+.table-head .rnum{
+    flex: 10%;
+}
+
+
+.table-head .ar{
+    flex: 50%;
+}
+
+
+.table-row .uicon{
+    flex: 5%;
+
+}
+
+.table-row .usernickname{
+    flex: 40%;
+	font-size: 20px;
+    font-family: monospace;
+}
+
+.table-row .age{
+    flex: 5%;
+	font-size: 20px;
+    font-family: monospace;
+}
+
+.table-row .uemail{
+    flex: 30%;
+	font-size: 20px;
+    font-family: monospace;
+}
+
+.table-row .nnum{
+    flex: 10%;
+	font-size: 20px;
+    font-family: monospace;
+}
+
+.table-row .rnum{
+    flex: 10%;
+	font-size: 20px;
+    font-family: monospace;
+}
+
+.table-row a{
+    color:rgb(231, 214, 27);
+	font-family:monospace;
+	font-weight: bold;
+}
+
+/* createNotice.php*/
+.createf{
+	flex: 100%;
+	font-family:monospace;
+	font-weight: bold;
+	font-size: 20px;
+	text-align: center;
+	
+}
+
